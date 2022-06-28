@@ -1,34 +1,28 @@
 ﻿using LinkedinLearningMaui.Models;
 using LinkedinLearningMaui.Services;
+using System.Collections.ObjectModel;
 using System.Net.Http.Json;
 
 namespace LinkedinLearningMaui;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    private ObservableCollection<Post> Posts { get; set; } = new();
 
-	public MainPage()
+    public MainPage()
 	{
 		InitializeComponent();
-	}
+
+        this.BindingContext = this;
+    }
 
 	protected override async void OnAppearing()
 	{
 		var postService = new PostService();
 		var posts = await postService.GetAsync();
+
+        foreach (var item in posts)
+            Posts.Add(item);
     }
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 }
 
