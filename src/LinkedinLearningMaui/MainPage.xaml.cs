@@ -7,7 +7,7 @@ namespace LinkedinLearningMaui;
 
 public partial class MainPage : ContentPage
 {
-    private ObservableCollection<Post> Posts { get; set; } = new();
+    public ObservableCollection<Post> Posts { get; set; } = new();
 
     public MainPage()
 	{
