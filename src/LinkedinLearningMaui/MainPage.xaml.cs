@@ -16,7 +16,7 @@ public partial class MainPage : ContentPage
 	protected override async void OnAppearing()
 	{
 		var postService = new PostService();
-		var posts = postService.Get();
+		var posts = await postService.GetAsync();
     }
 
 	private void OnCounterClicked(object sender, EventArgs e)

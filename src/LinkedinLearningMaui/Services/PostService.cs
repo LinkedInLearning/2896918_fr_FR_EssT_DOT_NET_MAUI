@@ -5,7 +5,7 @@ namespace LinkedinLearningMaui.Services;
 
 public class PostService
 {
-    public async Task<List<Post>> Get()
+    public async Task<List<Post>> GetAsync()
     {
         var http = new HttpClient
         {
