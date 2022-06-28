@@ -1,4 +1,8 @@
-﻿namespace LinkedinLearningMaui;
+﻿using LinkedinLearningMaui.Models;
+using LinkedinLearningMaui.Services;
+using System.Net.Http.Json;
+
+namespace LinkedinLearningMaui;
 
 public partial class MainPage : ContentPage
 {
@@ -8,6 +12,12 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	protected override async void OnAppearing()
+	{
+		var postService = new PostService();
+		var posts = postService.Get();
+    }
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
