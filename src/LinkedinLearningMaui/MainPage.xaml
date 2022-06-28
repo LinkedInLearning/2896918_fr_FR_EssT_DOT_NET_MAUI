@@ -9,10 +9,14 @@
     <ListView ItemsSource="{Binding Posts}">
         <ListView.ItemTemplate>
             <DataTemplate x:DataType="model:Post">
-                <TextCell Text="{Binding Title}"
-                    Detail="{Binding Body}" />
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" Margin="15"></Label>
+                        <Label Text="{Binding Body}"></Label>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
- 
+
 </ContentPage>
