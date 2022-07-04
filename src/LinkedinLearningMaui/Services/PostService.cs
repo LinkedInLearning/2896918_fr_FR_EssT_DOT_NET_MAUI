@@ -15,7 +15,7 @@ public class PostService
         return await http.GetFromJsonAsync<List<Post>>("posts");
     }
 
-    public async Task<List<Comment>> GetComments(int postId)
+    public async Task<List<Comment>> GetCommentsAsync(int postId)
     {
         var http = new HttpClient
         {
