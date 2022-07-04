@@ -4,11 +4,15 @@
              xmlns:local="clr-namespace:LinkedinLearningMaui"
              x:Class="LinkedinLearningMaui.App">
     <Application.Resources>
+        <StyleSheet Source="Resources/Styles/Css/styles.css" />
+
+        <!--
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+        -->
     </Application.Resources>
 </Application>

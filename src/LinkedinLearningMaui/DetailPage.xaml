@@ -8,7 +8,7 @@
     <CollectionView ItemsSource="{Binding Comments}" ItemsLayout="VerticalGrid, 2">
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Comment">
-                <Grid Style="{StaticResource GridStyle}">
+                <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
