@@ -14,4 +14,14 @@ public class PostService
 
         return await http.GetFromJsonAsync<List<Post>>("posts");
     }
+
+    public async Task<List<Comment>> GetComments(int postId)
+    {
+        var http = new HttpClient
+        {
+            BaseAddress = new Uri("https://jsonplaceholder.typicode.com/")
+        };
+
+        return await http.GetFromJsonAsync<List<Comment>>($"posts/{postId}/comments");
+    }
 }
