@@ -4,10 +4,18 @@
              x:Class="LinkedinLearningMaui.DetailPage"
              xmlns:model="clr-namespace:LinkedinLearningMaui.Models"
              Title="DetailPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Grid" x:Key="GridStyle">
+            <Setter Property="RowSpacing" Value="10"/>
+            <Setter Property="Padding" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+
     <CollectionView ItemsSource="{Binding Comments}" ItemsLayout="VerticalGrid, 2">
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Comment">
-                <Grid RowSpacing="10" Padding="10">
+                <Grid Style="{StaticResource GridStyle}">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
