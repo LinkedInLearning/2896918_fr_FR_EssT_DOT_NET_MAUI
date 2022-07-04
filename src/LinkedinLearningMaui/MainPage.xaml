@@ -6,7 +6,7 @@
              xmlns:model="clr-namespace:LinkedinLearningMaui.Models"
              x:DataType="local:MainPage">
 
-    <ListView ItemsSource="{Binding Posts}">
+    <ListView ItemsSource="{Binding Posts}" ItemSelected="ListView_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate x:DataType="model:Post">
                 <ViewCell>

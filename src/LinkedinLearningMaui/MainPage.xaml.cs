@@ -24,5 +24,12 @@ public partial class MainPage : ContentPage
         foreach (var item in posts)
             Posts.Add(item);
     }
+
+    private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        var post = e.SelectedItem as Post;
+
+        await Shell.Current.GoToAsync($"post/detail?id={post.Id}");
+    }
 }
 
