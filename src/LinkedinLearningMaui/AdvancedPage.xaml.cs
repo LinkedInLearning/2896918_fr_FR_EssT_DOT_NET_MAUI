@@ -21,4 +21,21 @@ public partial class AdvancedPage : ContentPage
             AltitudeLabel.Text = location.Altitude.ToString();
         }
     }
+
+    private async void Button_Clicked_FilePicker(object sender, EventArgs e)
+    {
+        var result = await FilePicker.Default.PickAsync(new PickOptions
+        {
+            PickerTitle = "Mon sélecteur de fichier",
+            FileTypes = new FilePickerFileType(
+                new Dictionary<DevicePlatform, IEnumerable<string>>
+                {
+                    { DevicePlatform.WinUI, new[] { ".png" }},
+                    { DevicePlatform.Android, new[] { ".jpg" }}
+                })
+        });
+
+        if(result != null)
+            this.FilenameLabel.Text = result.FileName;
+    }
 }

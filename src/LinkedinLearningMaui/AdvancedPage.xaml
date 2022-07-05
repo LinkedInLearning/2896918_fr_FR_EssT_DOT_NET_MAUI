@@ -14,5 +14,12 @@
             <Label>Altitude:</Label>
             <Label x:Name="AltitudeLabel"></Label>
         </HorizontalStackLayout>
+
+        <Button Text="Sélectionner un fichier" Clicked="Button_Clicked_FilePicker"></Button>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Nom :"/>
+            <Label x:Name="FilenameLabel" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
