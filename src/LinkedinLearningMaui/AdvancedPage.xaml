@@ -21,5 +21,20 @@
             <Label Text="Nom :"/>
             <Label x:Name="FilenameLabel" />
         </HorizontalStackLayout>
+
+        <Button Text="Récupérer les informations de l'appareil" Clicked="Button_Clicked_DeviceInfo"></Button>
+
+        <Label Text="Modèle : " />
+        <Label x:Name="modelLabel" />
+        <Label Text="Fabricant : " />
+        <Label x:Name="manufacturerLabel" />
+        <Label Text="Nom : " />
+        <Label x:Name="nameLabel" />
+        <Label Text="Version du système : " />
+        <Label x:Name="osVersionLabel" />
+        <Label Text="Idiom : " />
+        <Label x:Name="idiomLabel" />
+        <Label Text="Plateforme : " />
+        <Label x:Name="platformLabel" />
     </VerticalStackLayout>
 </ContentPage>

@@ -38,4 +38,14 @@ public partial class AdvancedPage : ContentPage
         if(result != null)
             this.FilenameLabel.Text = result.FileName;
     }
+
+    private void Button_Clicked_DeviceInfo(object sender, EventArgs e)
+    {
+        modelLabel.Text = DeviceInfo.Current.Model;
+        manufacturerLabel.Text = DeviceInfo.Current.Manufacturer;
+        nameLabel.Text = DeviceInfo.Current.Name;
+        osVersionLabel.Text = DeviceInfo.Current.VersionString;
+        idiomLabel.Text = DeviceInfo.Current.Idiom.ToString();
+        platformLabel.Text = DeviceInfo.Current.Platform.ToString();
+    }
 }
