@@ -6,14 +6,14 @@
     <VerticalStackLayout Padding="20">
         <Button Text="Position GPS" Clicked="Button_Clicked"></Button>
 
-        <HorizontalStackLayout Spacing="10">
+        <VerticalStackLayout Spacing="10">
             <Label>Latitude :</Label>
             <Label x:Name="LatitudeLabel"></Label>
             <Label>Longitude :</Label>
             <Label x:Name="LongitudeLabel"></Label>
             <Label>Altitude:</Label>
             <Label x:Name="AltitudeLabel"></Label>
-        </HorizontalStackLayout>
+        </VerticalStackLayout>
 
         <Button Text="Sélectionner un fichier" Clicked="Button_Clicked_FilePicker"></Button>
 
