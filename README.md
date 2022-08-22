@@ -2,8 +2,6 @@
 
 Ce dossier Repository est lié au cours `L'essentiel de .NET MAUI`.
 
-![Nom final de la formation][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
-
 DESCRIPTION DE LA FORMATION
 
 ## Instructions
@@ -24,7 +22,7 @@ La branche `main` correspond au code à la fin de la formation.
 
 ### Formateur
 
-**Nom du formateur** 
+**Christophe GIGAX** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
