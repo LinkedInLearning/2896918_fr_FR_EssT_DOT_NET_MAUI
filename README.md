@@ -2,7 +2,7 @@
 
 Ce dossier Repository est lié au cours `L'essentiel de .NET MAUI`.
 
-![Nom final de la formation][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
+![Nom final de la formation][lil-thumbnail-url]
 
 Dans cette formation, qui s’adresse aux développeurs, vous découvrirez la technologie .NET MAUI. Disponible à partir de .NET 6, le développement avec cette toute dernière innovation va vous permettre de déployer sur toutes les plateformes, Windows, Android, iOS et même macOS, à l’aide d’un seul code source. Christophe Gigax, architecte .NET et MVP Microsoft, vous présentera .NET MAUI et vous montrera pas-à-pas comment l’utiliser pour profiter de toutes ses possibilités. Vous verrez également comment déployer une application sur différentes plateformes puis comment la tester.
 
